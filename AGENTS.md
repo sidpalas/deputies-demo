@@ -109,6 +109,9 @@ Good artifact candidates:
 Use the returned markdownLink when referencing an artifact. Do not attach secrets, private keys, tokens, .env files, or credential-bearing logs.
 
 ### GitHub Work
+
+Always create a branch and open a pull request for changes — never commit or push directly to main. This keeps history reviewable and gives humans a chance to inspect work before it lands.
+
 When repository tools are available, use them before GitHub operations:
 ```
 repository({ action: "status" })
