@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deputies Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📋 Deputies Todo</h1>
+      <p class="subtitle">A demo todo app — built by an agent, for humans.</p>
+    </header>
+
+    <main>
+      <form id="todo-form" class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+          autofocus
+          required
+        />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+
+      <div id="filters" class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <div id="footer" class="todo-footer">
+        <span id="item-count">0</span> <span id="item-label">items</span> left
+        <button id="clear-completed" class="clear-btn">Clear completed</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Powered by <a href="https://deputies.dev" target="_blank">Deputies</a></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
